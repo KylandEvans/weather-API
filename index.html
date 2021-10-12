@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather API</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Weather API</h1>
+			<h2>
+				Enter city name or zip code to get current weather data for your
+				area
+			</h2>
+			<h3 id="location"></h3>
+			<input type="text" placeholder="City Name" id="cityInput" />
+
+			<hr />
+			<span>or</span>
+			<hr />
+			<input type="number" name="" id="zipCode" placeholder="Zip Code" />
+			<div>
+				<label for="imperial">F</label>
+				<input type="radio" name="imperial" id="imperial" checked />
+				<label for="metric">C</label>
+				<input type="radio" name="metric" id="metric" />
+			</div>
+			<button type="submit" id="submit-button">Get My Weather</button>
+		</div>
+
+		<main>
+			<div class="display-area">
+				<div class="data">
+					<div class="temperature tag">
+						Temperature: <span id="temp-data" class="weather-data"></span>
+					</div>
+					<div class="real-feel tag">
+						Feels Like:
+						<span id="real-feel-data" class="weather-data"></span>
+					</div>
+					<div class="humidity tag">
+						Humidity:
+						<span id="humidity-data" class="weather-data"></span>
+					</div>
+					<div class="wind-speed tag">
+						Wind Speed:
+						<span id="wind-speed-data" class="weather-data"></span>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

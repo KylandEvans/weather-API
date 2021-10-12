@@ -1,0 +1,30 @@
+body {
+	background-color: rgb(236, 164, 30);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 50px;
+}
+hr {
+	width: 13%;
+}
+
+.display-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.tag {
+	font-size: 20px;
+	margin: 15px;
+}
+
+.weather-data {
+	font-size: 24px;
+}
